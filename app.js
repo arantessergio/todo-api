@@ -15,7 +15,7 @@ var mongoose = require('mongoose');
 // Use native Node promises
 mongoose.Promise = global.Promise;
 // connect to MongoDB
-mongoose.connect('mongodb://localhost/todo-api')
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds149221.mlab.com:49221/heroku_n7zlcwzm')
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
